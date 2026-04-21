@@ -1,0 +1,15 @@
+package metier;
+
+import dao.Produit;
+
+import java.util.List;
+
+public interface ProduitMetier {
+
+    void addProduit(Produit p);
+    void deleteProduit(Long id);
+    List<Produit> getAllProduits();
+    Produit getProduitById(Long id);
+    void updateProduit(Produit p);
+
+}
